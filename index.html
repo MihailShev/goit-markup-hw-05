@@ -503,12 +503,12 @@
           <p class="form-text">Subscribe</p>
 
           <form class="footer-form">
-            <label class="label-footer-form" for="user-email"
+            <label class="label-footer-form" for="user-email-footr"
               ><input
                 class="footer-form-inpt"
-                name="user-email"
+                name="user-email-footr"
                 type="email"
-                id="user-email"
+                id="user-email-footr"
                 placeholder="E-mail"
             /></label>
             <button class="footer-btn" type="submit">
@@ -531,64 +531,66 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <div class="box-form-wrapper">
-          <label class="label-form" for="user-name">Name</label>
-          <div class="wrapp-input">
-            <input class="form" type="text" name="user-name" id="user-name" />
-            <svg class="icon-form" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+        <form class="modal-form">
+          <div class="box-form-wrapper">
+            <label class="label-form" for="user-name">Name</label>
+            <div class="wrapp-input">
+              <input class="form" type="text" name="user-name" id="user-name" />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="box-form-wrapper">
-          <label class="label-form" for="user-tel">Phone</label>
-          <div class="wrapp-input">
-            <input class="form" type="tel" name="user-tel" id="user-tel" />
-            <svg class="icon-form" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="box-form-wrapper">
+            <label class="label-form" for="user-tel">Phone</label>
+            <div class="wrapp-input">
+              <input class="form" type="tel" name="user-tel" id="user-tel" />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="box-form-wrapper">
-          <label class="label-form" for="user-email">Email</label>
-          <div class="wrapp-input">
+          <div class="box-form-wrapper">
+            <label class="label-form" for="user-email">Email</label>
+            <div class="wrapp-input">
+              <input
+                class="form"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-emai"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="box-form-coment-wrapper">
+            <label class="label-form" for="user-comment">Comment</label>
+            <textarea
+              class="form-coment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="box-privacy-policy">
             <input
-              class="form"
-              type="email"
-              name="user-email"
-              id="user-email"
+              class="main-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <svg class="icon-form" width="18" height="24">
-              <use href="./images/icons.svg#icon-emai"></use>
-            </svg>
+            <label class="label-checkbox" for="user-privacy"
+              ><span class="castom-checkbox"
+                ><svg class="icon-click" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="link-privacy-policy" href="">Privacy Policy</a>
+            </label>
           </div>
-        </div>
-        <div class="box-form-coment-wrapper">
-          <label class="label-form" for="user-comment">Comment</label>
-          <textarea
-            class="form-coment"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Text input"
-          ></textarea>
-        </div>
-        <div class="box-privacy-policy">
-          <input
-            class="main-checkbox visually-hidden"
-            type="checkbox"
-            name="user-privacy"
-            id="user-privacy"
-            value="true"
-          />
-          <label class="label-checkbox" for="user-privacy"
-            ><span class="castom-checkbox"
-              ><svg class="icon-click" width="10" height="8">
-                <use href="./images/icons.svg#icon-click"></use></svg></span
-            >I accept the terms and conditions of the
-            <a class="link-privacy-policy" href="">Privacy Policy</a>
-          </label>
-        </div>
-        <button class="submit-btn" type="submit">Send</button>
+          <button class="submit-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
