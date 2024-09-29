@@ -568,6 +568,10 @@ ol {
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-inpt::placeholder {
+  color: #fff;
+}
+
 .footer-form-inpt:hover,
 .footer-form-inpt:focus {
   border-color: #4d5ae5;
@@ -591,7 +595,6 @@ ol {
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
-  margin-left: 24px;
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -823,6 +826,8 @@ ol {
   text-align: center;
   color: #fff;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
